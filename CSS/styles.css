@@ -286,7 +286,6 @@ footer .logoEmpresa {
 .imagenContacto {
     flex: 1;
     position: relative;
-    overflow: hidden;
     border-radius: 15px;
 }
 
@@ -327,7 +326,6 @@ footer .logoEmpresa {
 .paralelogramo {
     width: 320px;
     height: 200px;
-    overflow: hidden;
     position: relative;
     transition: transform 0.3s ease;
 }
