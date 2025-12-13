@@ -1,0 +1,340 @@
+/* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Header */
+
+.indexRedesSociales {
+    display: flex;
+    align-items: center;
+}
+
+.indexListaRedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.indexListaRedes li {
+    list-style: none;
+}
+
+.iconoRS {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+
+/* Banner */
+
+.indexBanner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.indexBanner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+
+.indexBanner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+
+}
+
+
+
+/* Categorias */
+.tituCategoria {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.car-card {
+    position: relative;
+    background-image: url();
+    height: 350px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.02);
+}
+
+.car-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Estilos Acerca De */
+.indexAcercaDe {
+    background: #2a2a2a;
+}
+
+.imagenAcercaDe {
+    position: relative;
+    padding: 0;
+}
+
+.tituloAcercaDe {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.imagenAcercaDe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.55;
+    border-radius: 10px;
+}
+
+
+.descripcionAcercaDe {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #dad9d9;
+    line-height: 1.8;
+}
+
+.descripcionAcercaDe span {
+    font-weight: 700;
+}
+
+/* Estilos Ubicación */
+.mapa {
+    width: 100%;
+}
+
+.tituMapa {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+/* Footer */
+footer .logoEmpresa {
+    display: flex;
+    justify-content: center;
+}
+
+/* Galeria */
+.fotosGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 20rem;
+    border-radius: 10px;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Estilos Contacto */
+.contactoSection {
+    padding-top: 120px;
+    background: #f2f2f2;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+
+
+.tituloContacto {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 40px;
+}
+
+
+.contactoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.formContacto {
+    flex: 1;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formGrupo {
+    margin-bottom: 18px;
+}
+
+.formGrupo label {
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formGrupo input,
+.formGrupo textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    background: #fafafa;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.formGrupo input:focus,
+.formGrupo textarea:focus {
+    border-color: #2a2a2a;
+    box-shadow: 0 0 10px #2a2a2a;
+    outline: none;
+}
+
+
+.btnEnviar {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #2a2a2a, #5d5d5d);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btnEnviar:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #2a2a2a, #81807f);
+}
+
+
+.imagenContacto {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imagenContacto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65);
+    border-radius: 15px;
+}
+
+/* Estilos Productos */
+.tituloProductos {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.seccionProductos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+/* section información */
+.tituloCaract {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+}
+
+.paralelogramo {
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.paralelogramo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+}
